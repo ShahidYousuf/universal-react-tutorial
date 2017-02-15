@@ -10,6 +10,8 @@ router.get('*', function(request, response) {
             <ReactRouter.Router history={ReactRouter.browserHistory}>
                 <ReactRouter.Route path='/' component={require('../Component.jsx')}>
                 </ReactRouter.Route>
+                <ReactRouter.Route path='/about' component={require('../About.jsx')}>
+                </ReactRouter.Route>
             </ReactRouter.Router>
         ),
         location: request.url
